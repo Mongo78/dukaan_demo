@@ -1,0 +1,15 @@
+.notify_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  border-radius: 40rem;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  svg {
+    color: #4d4d4d;
+    font-size: 2rem;
+  }
+}

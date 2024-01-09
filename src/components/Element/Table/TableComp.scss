@@ -1,0 +1,117 @@
+.dense_table_main_container {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  .top_input_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .button_div {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-around;
+      button {
+        background-color: #fff;
+        color: #4d4d4d;
+        font-size: 1.4rem;
+        margin-left: 0.4rem;
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+    .input_div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      word-spacing: 0.8rem;
+      font-size: 15px;
+
+      max-width: 25rem;
+      padding: 9px, 16px, 9px, 16px;
+      border-radius: 0.5rem;
+      border: 1px solid #4d4d4d;
+      height: 4rem;
+      .search__input {
+        width: 100%;
+        padding: 9px, 16px, 9px, 16px;
+        border: none;
+
+        &:focus {
+          outline: none;
+          width: 100%;
+        }
+      }
+      .icon {
+        font-size: 2rem;
+        margin: 0 1rem;
+        color: #4d4d4d;
+        z-index: 99;
+      }
+    }
+  }
+
+  .pagination_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      button {
+        font-size: 1.4rem;
+        border: none;
+      }
+      svg {
+        font-size: 2rem;
+        &::after {
+          content: " (" attr(href) ")";
+        }
+      }
+      .Mui-selected {
+        background-color: #146eb4;
+        color: white;
+      }
+    }
+  }
+  .table {
+    .table_head {
+      border-radius: 1rem;
+      .align_left {
+        padding: 1rem;
+        text-align: left;
+        font-size: 1.4rem;
+        color: #4d4d4d;
+      }
+      .align_right {
+        padding: 1rem;
+        text-align: right;
+        font-size: 1.4rem;
+        color: #4d4d4d;
+      }
+      .align_center {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #4d4d4d;
+      }
+      background-color: #f2f2f2;
+    }
+    .table_body {
+      .table_row {
+        .table_cell {
+          text-align: center;
+          font-size: 1.4rem;
+        }
+        .left {
+          text-align: left;
+          color: #146eb4;
+        }
+        .center {
+          text-align: center;
+        }
+        .right {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.nav_bar_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-color: #1e2640;
+  min-width: 23rem;
+  height: 100%;
+  color: white;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  .top_section {
+    flex: 1;
+    .profile_section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 1rem;
+      }
+      .user_name {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        h2 {
+          font-size: 2rem;
+        }
+        a {
+          font-size: 1.6rem;
+          text-decoration: none;
+          color: #fff;
+          border-bottom: 1px solid #fff;
+          cursor: pointer;
+        }
+      }
+      .arrow {
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+    .nav_bars {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .active_nav {
+        border-radius: 1rem;
+        background-color: rgba(128, 128, 128, 0.218);
+      }
+      .nav_link {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.8rem;
+        width: 100%;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.6rem;
+
+        // border-radius: 0.6rem;
+        // background-color: rgba(128, 128, 128, 0.218);
+        margin-bottom: 0.5rem;
+
+        svg {
+          font-size: 2rem;
+          margin: 0 1rem;
+        }
+        &:hover {
+          border-radius: 1rem;
+          background-color: #1b55c0c7;
+        }
+      }
+    }
+  }
+  .bottom_section {
+    border-radius: 0.6rem;
+    background-color: rgba(128, 128, 128, 0.218);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .icon_div {
+      padding: 0.2rem;
+      border-radius: 0.6rem;
+      background-color: rgba(128, 128, 128, 0.218);
+      svg {
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+      }
+    }
+    .credits_container {
+      margin-left: 1rem;
+    }
+  }
+}
